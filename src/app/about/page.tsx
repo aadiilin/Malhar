@@ -6,10 +6,10 @@ import Card from "@/components/ui/Card";
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-emerald-900 to-slate-900 text-white py-20 md:py-28">
+      <section className="bg-gradient-to-br from-dark-bg to-slate-900 text-white py-20 md:py-28">
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">About Us</h1>
-          <p className="text-emerald-100/80 text-lg max-w-2xl mx-auto">Discover the story, mission, and vision of Malharul Islam Academy</p>
+          <p className="text-white/80 text-lg max-w-2xl mx-auto">Discover the story, mission, and vision of Malharul Islam Academy</p>
         </div>
       </section>
 
@@ -26,7 +26,7 @@ export default function AboutPage() {
             <AnimatedSection direction="left">
               <Card className="h-full">
                 <div className="flex gap-4">
-                  <Target className="w-8 h-8 text-emerald-600 shrink-0 mt-1" />
+                  <Target className="w-8 h-8 text-primary shrink-0 mt-1" />
                   <div>
                     <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">Our Mission</h3>
                     <p className="text-gray-600 dark:text-gray-400">To provide quality education rooted in Islamic values, fostering academic excellence, moral integrity, and community service, while empowering individuals to contribute positively to society.</p>
@@ -37,7 +37,7 @@ export default function AboutPage() {
             <AnimatedSection direction="right">
               <Card className="h-full">
                 <div className="flex gap-4">
-                  <Eye className="w-8 h-8 text-amber-500 shrink-0 mt-1" />
+                  <Eye className="w-8 h-8 text-accent-dark shrink-0 mt-1" />
                   <div>
                     <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">Our Vision</h3>
                     <p className="text-gray-600 dark:text-gray-400">To be a leading institution nurturing well-rounded individuals who excel academically, embody Islamic principles, and serve as catalysts for positive change in their communities.</p>
@@ -65,7 +65,7 @@ export default function AboutPage() {
             ].map((v, i) => (
               <AnimatedSection key={v.title} delay={i * 0.05}>
                 <Card className="text-center p-4">
-                  <v.icon className="w-8 h-8 mx-auto mb-2 text-emerald-600" />
+                  <v.icon className="w-8 h-8 mx-auto mb-2 text-primary" />
                   <h4 className="font-bold text-sm mb-1 text-gray-900 dark:text-white">{v.title}</h4>
                   <p className="text-xs text-gray-600 dark:text-gray-400">{v.desc}</p>
                 </Card>

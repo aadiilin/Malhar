@@ -51,10 +51,10 @@ const programs = [
 export default function ProgramsPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-emerald-900 to-slate-900 text-white py-20 md:py-28">
+      <section className="bg-gradient-to-br from-dark-bg to-slate-900 text-white py-20 md:py-28">
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Our Programs</h1>
-          <p className="text-emerald-100/80 text-lg max-w-2xl mx-auto">Comprehensive educational and community development programs</p>
+          <p className="text-white/80 text-lg max-w-2xl mx-auto">Comprehensive educational and community development programs</p>
         </div>
       </section>
 
@@ -64,17 +64,17 @@ export default function ProgramsPage() {
             {programs.map((p, i) => (
               <AnimatedSection key={p.title} delay={i * 0.05}>
                 <Card className="h-full group">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-100 to-amber-100 dark:from-emerald-900/30 dark:to-amber-900/30 flex items-center justify-center mb-5">
-                    <p.icon className="w-7 h-7 text-emerald-600 dark:text-emerald-400" />
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-light to-accent-light dark:from-dark-bg/30 dark:to-dark-bg/30 flex items-center justify-center mb-5">
+                    <p.icon className="w-7 h-7 text-primary dark:text-primary-light" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{p.title}</h3>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">{p.desc}</p>
                   <div className="flex flex-wrap gap-2 mt-auto">
                     <span className="flex items-center gap-1 text-xs text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-3 py-1.5 rounded-full">
-                      <Clock className="w-3 h-3 text-emerald-600" /> {p.duration}
+                      <Clock className="w-3 h-3 text-primary" /> {p.duration}
                     </span>
                     <span className="flex items-center gap-1 text-xs text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-3 py-1.5 rounded-full">
-                      <Award className="w-3 h-3 text-amber-500" /> {p.level}
+                      <Award className="w-3 h-3 text-accent-dark" /> {p.level}
                     </span>
                   </div>
                 </Card>

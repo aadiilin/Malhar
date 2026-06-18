@@ -26,10 +26,10 @@ export default function GalleryPage() {
 
   return (
     <>
-      <section className="bg-gradient-to-br from-emerald-900 to-slate-900 text-white py-20 md:py-28">
+      <section className="bg-gradient-to-br from-dark-bg to-slate-900 text-white py-20 md:py-28">
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Gallery</h1>
-          <p className="text-emerald-100/80 text-lg max-w-2xl mx-auto">Explore moments captured at Malharul Islam Academy</p>
+          <p className="text-white/80 text-lg max-w-2xl mx-auto">Explore moments captured at Malharul Islam Academy</p>
         </div>
       </section>
 
@@ -38,7 +38,7 @@ export default function GalleryPage() {
           <div className="flex flex-wrap justify-center gap-3 mb-10">
             {categories.map((cat) => (
               <button key={cat} onClick={() => setActiveCat(cat)}
-                className={`px-5 py-2.5 rounded-xl font-medium text-sm transition-all ${activeCat === cat ? "bg-emerald-600 text-white shadow-lg" : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-emerald-50 dark:hover:bg-emerald-900/20"}`}>
+                className={`px-5 py-2.5 rounded-xl font-medium text-sm transition-all ${activeCat === cat ? "bg-primary text-white shadow-lg" : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-primary-light dark:hover:bg-dark-bg/20"}`}>
                 {cat}
               </button>
             ))}
@@ -47,8 +47,8 @@ export default function GalleryPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {filtered.map((img, i) => (
               <AnimatedSection key={img.id} delay={i * 0.03}>
-                <div className="aspect-square rounded-2xl bg-gradient-to-br from-emerald-100 to-amber-100 dark:from-emerald-900/30 dark:to-amber-900/30 border border-gray-200 dark:border-gray-700 flex items-center justify-center group cursor-pointer relative overflow-hidden">
-                  <ImageIcon className="w-10 h-10 text-emerald-600/50 dark:text-emerald-400/50 group-hover:scale-110 transition-transform" />
+                <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary-light to-accent-light dark:from-dark-bg/30 dark:to-dark-bg/30 border border-gray-200 dark:border-gray-700 flex items-center justify-center group cursor-pointer relative overflow-hidden">
+                  <ImageIcon className="w-10 h-10 text-primary/50 dark:text-primary-light/50 group-hover:scale-110 transition-transform" />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all flex items-end p-4">
                     <p className="text-white font-medium opacity-0 group-hover:opacity-100 transition-opacity">{img.title}</p>
                   </div>

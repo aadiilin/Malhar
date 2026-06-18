@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { ButtonHTMLAttributes, ReactNode } from "react";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "gold" | "outline" | "ghost";
+  variant?: "primary" | "accent" | "outline" | "ghost";
   size?: "sm" | "md" | "lg";
   icon?: ReactNode;
   href?: string;
@@ -15,10 +15,10 @@ export default function Button({
 }: ButtonProps) {
   const base = "inline-flex items-center justify-center gap-2 font-semibold rounded-2xl transition-all duration-300 cursor-pointer border-0";
   const variants = {
-    primary: "bg-emerald-600 text-white hover:bg-emerald-700 shadow-lg shadow-emerald-600/20 hover:shadow-emerald-600/30",
-    gold: "bg-amber-500 text-slate-900 hover:bg-amber-600 shadow-lg shadow-amber-500/20",
-    outline: "border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white",
-    ghost: "text-emerald-600 hover:bg-emerald-50 dark:hover:bg-emerald-900/20",
+    primary: "bg-primary text-white hover:bg-primary-dark shadow-lg shadow-primary/20 hover:shadow-primary/30",
+    accent: "bg-accent text-slate-900 hover:bg-accent-dark shadow-lg shadow-accent/20",
+    outline: "border-2 border-primary text-primary hover:bg-primary hover:text-white",
+    ghost: "text-primary hover:bg-primary-light dark:hover:bg-primary-dark/20",
   };
   const sizes = { sm: "px-4 py-2 text-sm", md: "px-6 py-3 text-base", lg: "px-8 py-4 text-lg" };
 

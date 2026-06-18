@@ -47,7 +47,7 @@ export default function AdminGalleryPage() {
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {items.map((item) => (
-            <div key={item.id} className="relative group aspect-square rounded-2xl bg-gradient-to-br from-emerald-100 to-amber-100 dark:from-emerald-900/30 dark:to-amber-900/30 border border-gray-200 dark:border-gray-700 flex items-center justify-center">
+            <div key={item.id} className="relative group aspect-square rounded-2xl bg-gradient-to-br from-primary-light to-accent-light dark:from-dark-bg/30 dark:to-dark-bg/30 border border-gray-200 dark:border-gray-700 flex items-center justify-center">
               <span className="text-sm font-medium text-gray-600 dark:text-gray-400 text-center px-2">{item.title}</span>
               <button onClick={() => remove(item.id)}
                 className="absolute top-2 right-2 p-2 bg-red-500 text-white rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">

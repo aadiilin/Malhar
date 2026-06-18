@@ -24,12 +24,12 @@ export default function ProgramsPreview() {
           {programs.map((p, i) => (
             <AnimatedSection key={p.title} delay={i * 0.05}>
               <Card className="h-full group">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-100 to-amber-100 dark:from-emerald-900/30 dark:to-amber-900/30 flex items-center justify-center mb-5">
-                  <p.icon className="w-7 h-7 text-emerald-600 dark:text-emerald-400" />
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-light to-accent-light dark:from-dark-bg/30 dark:to-dark-bg/30 flex items-center justify-center mb-5">
+                  <p.icon className="w-7 h-7 text-primary dark:text-primary-light" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{p.title}</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">{p.desc}</p>
-                <span className="inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-400 text-sm font-semibold group-hover:gap-2 transition-all">
+                <span className="inline-flex items-center gap-1 text-primary dark:text-primary-light text-sm font-semibold group-hover:gap-2 transition-all">
                   Learn More <ArrowRight className="w-4 h-4" />
                 </span>
               </Card>

@@ -24,10 +24,10 @@ const impactStats = [
 export default function CommunityPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-emerald-900 to-slate-900 text-white py-20 md:py-28">
+      <section className="bg-gradient-to-br from-dark-bg to-slate-900 text-white py-20 md:py-28">
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Community Development</h1>
-          <p className="text-emerald-100/80 text-lg max-w-2xl mx-auto">Serving humanity through compassion, action, and sustainable community programs</p>
+          <p className="text-white/80 text-lg max-w-2xl mx-auto">Serving humanity through compassion, action, and sustainable community programs</p>
         </div>
       </section>
 
@@ -40,8 +40,8 @@ export default function CommunityPage() {
             {initiatives.map((item, i) => (
               <AnimatedSection key={item.title} delay={i * 0.05}>
                 <Card className="h-full">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-100 to-amber-100 dark:from-emerald-900/30 dark:to-amber-900/30 flex items-center justify-center mb-5">
-                    <item.icon className="w-7 h-7 text-emerald-600 dark:text-emerald-400" />
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-light to-accent-light dark:from-dark-bg/30 dark:to-dark-bg/30 flex items-center justify-center mb-5">
+                    <item.icon className="w-7 h-7 text-primary dark:text-primary-light" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{item.title}</h3>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{item.desc}</p>
@@ -66,13 +66,13 @@ export default function CommunityPage() {
               </div>
             </AnimatedSection>
             <AnimatedSection direction="right">
-              <Card className="bg-gradient-to-br from-emerald-50 to-amber-50 dark:from-emerald-900/20 dark:to-amber-900/20 p-8">
+              <Card className="bg-gradient-to-br from-primary-light to-accent-light dark:from-dark-bg/20 dark:to-dark-bg/20 p-8">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Community Impact</h3>
                 <div className="space-y-4">
                   {impactStats.map((stat) => (
                     <div key={stat.label} className="flex items-center justify-between p-3 bg-white dark:bg-gray-800 rounded-xl">
                       <span className="text-gray-600 dark:text-gray-400">{stat.label}</span>
-                      <span className="font-bold text-emerald-600">{stat.value}</span>
+                      <span className="font-bold text-primary">{stat.value}</span>
                     </div>
                   ))}
                 </div>

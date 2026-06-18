@@ -55,10 +55,10 @@ export default function AdminContentPage() {
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5 capitalize">{s.key.replace(/_/g, " ")}</label>
             {s.key.includes("description") || s.key.includes("mission") || s.key.includes("vision") || s.key.includes("about_") ? (
               <textarea value={s.value} onChange={(e) => setSettings(settings.map((x) => x.id === s.id ? { ...x, value: e.target.value } : x))}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white outline-none focus:ring-2 focus:ring-emerald-500/50 resize-none" rows={4} />
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white outline-none focus:ring-2 focus:ring-primary/50 resize-none" rows={4} />
             ) : (
               <input value={s.value} onChange={(e) => setSettings(settings.map((x) => x.id === s.id ? { ...x, value: e.target.value } : x))}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white outline-none focus:ring-2 focus:ring-emerald-500/50" />
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white outline-none focus:ring-2 focus:ring-primary/50" />
             )}
           </div>
         ))}

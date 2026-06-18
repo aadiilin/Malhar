@@ -21,16 +21,16 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       )}>
         <div className="p-6">
           <Link href="/admin" className="flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-bold">م</div>
+            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white font-bold">م</div>
             <div>
               <p className="font-bold text-gray-900 dark:text-white text-sm">Admin Panel</p>
-              <p className="text-xs text-emerald-600">Malharul Islam Academy</p>
+              <p className="text-xs text-primary">Malharul Islam Academy</p>
             </div>
           </Link>
           <nav className="space-y-1">
             {sidebarLinks.map((link) => (
               <Link key={link.href} href={link.href} onClick={() => setSidebarOpen(false)}
-                className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 hover:text-emerald-600 transition-all">
+                className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-primary-light dark:hover:bg-dark-bg/20 hover:text-primary transition-all">
                 <link.icon className="w-5 h-5" />
                 {link.name}
               </Link>
@@ -38,7 +38,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           </nav>
           <div className="absolute bottom-6 left-6 right-6">
             <Link href="/"
-              className="flex items-center gap-2 px-4 py-3 rounded-xl text-sm text-gray-500 hover:text-emerald-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all">
+              className="flex items-center gap-2 px-4 py-3 rounded-xl text-sm text-gray-500 hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-700 transition-all">
               <ArrowLeft className="w-4 h-4" /> Back to Website
             </Link>
           </div>

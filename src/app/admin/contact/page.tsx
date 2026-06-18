@@ -48,7 +48,7 @@ export default function AdminContactPage() {
               <div className="flex items-start justify-between mb-3">
                 <div>
                   <h3 className="font-bold text-gray-900 dark:text-white">{msg.name}</h3>
-                  <a href={`mailto:${msg.email}`} className="flex items-center gap-1 text-sm text-emerald-600 hover:underline">
+                  <a href={`mailto:${msg.email}`} className="flex items-center gap-1 text-sm text-primary hover:underline">
                     <Mail className="w-3 h-3" /> {msg.email}
                   </a>
                 </div>

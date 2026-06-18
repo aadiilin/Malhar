@@ -13,8 +13,8 @@ export default function AdminDashboard() {
           { name: "Contact Messages", href: "/admin/contact", icon: MessageSquare, desc: "View messages from contact form" },
         ].map((item) => (
           <Link key={item.name} href={item.href}>
-            <Card className="h-full hover:border-emerald-400 cursor-pointer">
-              <item.icon className="w-10 h-10 text-emerald-600 mb-4" />
+            <Card className="h-full hover:border-primary cursor-pointer">
+              <item.icon className="w-10 h-10 text-primary mb-4" />
               <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">{item.name}</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">{item.desc}</p>
             </Card>

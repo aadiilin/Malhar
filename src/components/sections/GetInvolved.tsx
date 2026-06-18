@@ -42,8 +42,8 @@ export default function GetInvolved() {
                   className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-100 to-amber-100 dark:from-emerald-900/30 dark:to-amber-900/30 flex items-center justify-center">
-                      <item.icon className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-light to-accent-light dark:from-dark-bg/30 dark:to-dark-bg/30 flex items-center justify-center">
+                      <item.icon className="w-6 h-6 text-primary dark:text-primary-light" />
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 dark:text-white">{item.title}</h3>
                   </div>

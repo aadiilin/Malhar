@@ -16,7 +16,7 @@ export default function SectionHeading({ title, subtitle, align = "center" }: Se
       className={`mb-12 ${align === "center" ? "text-center" : ""}`}
     >
       {subtitle && (
-        <span className="inline-block px-4 py-1.5 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 text-sm font-semibold rounded-full mb-4">
+        <span className="inline-block px-4 py-1.5 bg-primary-light dark:bg-dark-bg/30 text-primary-dark dark:text-primary-light text-sm font-semibold rounded-full mb-4">
           {subtitle}
         </span>
       )}

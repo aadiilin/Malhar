@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, MessageCircle, Globe, ExternalLink, Play } from "l
 
 export default function Footer() {
   return (
-    <footer className="bg-emerald-900 text-white">
+    <footer className="bg-dark-bg text-white">
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
@@ -11,10 +11,10 @@ export default function Footer() {
               <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-white font-bold text-xl">م</div>
               <div>
                 <p className="font-bold text-lg leading-tight">Malharul Islam</p>
-                <p className="text-emerald-300 text-sm">Academy</p>
+                <p className="text-primary-light text-sm">Academy</p>
               </div>
             </div>
-            <p className="text-emerald-100/70 text-sm leading-relaxed mb-6">
+            <p className="text-white/70 text-sm leading-relaxed mb-6">
               Empowering the community through quality education, Islamic values, and social development since our establishment in Vellamchira, Thodupuzha.
             </p>
             <div className="flex gap-3">
@@ -25,7 +25,7 @@ export default function Footer() {
                 { icon: Play, href: "https://youtube.com/@malharulislam", label: "YouTube" },
               ].map((s) => (
                 <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
-                  className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-amber-500 transition-colors">
+                  className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-accent transition-colors">
                   <s.icon className="w-5 h-5" />
                 </a>
               ))}
@@ -44,7 +44,7 @@ export default function Footer() {
                 { name: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-emerald-100/70 hover:text-amber-400 transition-colors text-sm">
+                  <Link href={link.href} className="text-white/70 hover:text-accent transition-colors text-sm">
                     {link.name}
                   </Link>
                 </li>
@@ -63,7 +63,7 @@ export default function Footer() {
                 "Skill Development",
                 "Charity & Relief",
               ].map((p) => (
-                <li key={p} className="text-emerald-100/70 text-sm">{p}</li>
+                <li key={p} className="text-white/70 text-sm">{p}</li>
               ))}
             </ul>
           </div>
@@ -72,18 +72,18 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Contact Info</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
-                <span className="text-emerald-100/70 text-sm">Malharul Islam Academy, Vellamchira, Thodupuzha, Idukki District, Kerala - 685584</span>
+                <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                <span className="text-white/70 text-sm">Malharul Islam Academy, Vellamchira, Thodupuzha, Idukki District, Kerala - 685584</span>
               </li>
               <li>
-                <a href="mailto:info@malharulislamacademy.com" className="flex items-center gap-3 text-emerald-100/70 hover:text-amber-400 transition-colors text-sm">
-                  <Mail className="w-5 h-5 text-amber-400 shrink-0" />
+                <a href="mailto:info@malharulislamacademy.com" className="flex items-center gap-3 text-white/70 hover:text-accent transition-colors text-sm">
+                  <Mail className="w-5 h-5 text-accent shrink-0" />
                   info@malharulislamacademy.com
                 </a>
               </li>
               <li>
-                <a href="tel:+919446XXXXXX" className="flex items-center gap-3 text-emerald-100/70 hover:text-amber-400 transition-colors text-sm">
-                  <Phone className="w-5 h-5 text-amber-400 shrink-0" />
+                <a href="tel:+919446XXXXXX" className="flex items-center gap-3 text-white/70 hover:text-accent transition-colors text-sm">
+                  <Phone className="w-5 h-5 text-accent shrink-0" />
                   +91 9446XXXXXX
                 </a>
               </li>
@@ -94,10 +94,10 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-custom py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-emerald-100/50 text-sm">© {new Date().getFullYear()} Malharul Islam Academy. All rights reserved.</p>
+          <p className="text-white/50 text-sm">© {new Date().getFullYear()} Malharul Islam Academy. All rights reserved.</p>
           <div className="flex gap-4 text-sm">
-            <Link href="/privacy" className="text-emerald-100/50 hover:text-amber-400 transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="text-emerald-100/50 hover:text-amber-400 transition-colors">Terms of Service</Link>
+            <Link href="/privacy" className="text-white/50 hover:text-accent transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="text-white/50 hover:text-accent transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
